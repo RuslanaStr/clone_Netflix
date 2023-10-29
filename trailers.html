@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/trailers.css">
+  <title>Трейлеры</title>
+</head>
+<body>
+  <header class="header header__black">
+    <div class="header__container" id="nav">
+      <button class="header__burger-btn" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="./index.html" class="header__logo">
+        <img src="./img/netflix-logo.svg" alt="Logo">
+      </a>
+      <div class="header__menu menu">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="./films.html" class="menu__link">Фильмы</a></li>
+            <li class="menu__item"><a href="./favorites.html" class="menu__link">Мой список</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="video__container" id="trailer__container"></div>
+  <div id="additional-video-trailer"></div>
+
+  <!-- <script type="module" src="./js/btn-trailers.js"></script> -->
+  <script type="module" src="./js/trailerInfoMoovie.js"></script>
+  <script type="module" src="./js/burger.js"></script>
+</body>
+</html>

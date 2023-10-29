@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/favorite.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
+  <title>Сохраненные фильмы</title>
+</head>
+<body>
+	<section class="wrapper">
+		<header class="header">
+			<div class="header__container" id="nav">
+				<button class="header__burger-btn" id="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="./index.html" class="header__logo">
+					<img src="./img/netflix-logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="./films.html" class="menu__link">Фильмы</a></li>
+							<li class="menu__item"><a href="./favorites.html" class="menu__link">Мой список</a></li>
+						</ul>
+					</nav>
+					<div class="right__section">
+						<div class="forms">
+							<form class="search__container">
+								<img class="search__icon" src="img/search.svg" alt="Search">
+								<input type="text" class="search__input" placeholder="Поиск" />
+							</form>
+						</div>
+						<div class="registration">
+							<!-- <button class="form__btn">Вход</button> -->
+							<img src="img/netflix-avatar.png" alt="Avatar" class="nav__avatar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="favorite__style">
+			<h1 class="fav__title">Мой список</h1>
+			<div id="saved__movies-container"></div>
+			<div id="movie__template">
+				<div class="movie">
+					<h2 class="movie__title"></h2>
+					<div class="movie__poster"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__icons">
+				<a href="https://www.facebook.com/netflix/"><img src="./img/icons/facebook.svg" alt="Facebook" class="footer__social"></a>
+				<a href="https://www.instagram.com/Netflix/"><img src="./img/icons/instagram.svg" alt="Instagram" class="footer__social"></a>
+				<a href="#"><img src="./img/icons/youtube.svg" alt="Youtube" class="footer__social"></a>
+			</div>
+			<div class="footer__link">
+				<div class="column__left">
+					<div class="link__column-one column">
+						<a href="#" class="link__footer">Аудиоописание</a>
+						<a href="#" class="link__footer">Связи с инвесторами</a>
+						<a href="#" class="link__footer">Юридические сообщения</a>
+					</div>
+					<div class="link__column-two column">
+						<a href="#" class="link__footer">Справочный центр</a>
+						<a href="#" class="link__footer">Вакансии</a>
+						<a href="#" class="link__footer">Настройка файлов cookie</a>
+					</div>
+				</div>
+				<div class="column__right">
+					<div class="link__column-three column">
+						<a href="#" class="link__footer">Подарочные карты</a>
+						<a href="#" class="link__footer">Условия использования</a>
+						<a href="#" class="link__footer">Корпоративная информация</a>
+					</div>
+					<div class="link__column-four column">
+						<a href="#" class="link__footer">Медиацентр</a>
+						<a href="#" class="link__footer">Конфиденциальность</a>
+						<a href="#" class="link__footer">Связаться с нами</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+  <!-- Подключение скрипта, который отображает сохраненные фильмы -->
+  <script type="module" src="public/JS/favorites.js"></script>
+  <script type="module" src="./js/search.js"></script>
+  <script type="module" src="./js/banner.js"></script>
+  <script type="module" src="./js/header-film.js"></script>
+  <script type="module" src="./js/movie-play.js"></script>
+	<script type="module" src="./js/burger.js"></script>
+
+<!-- Скрипт для работы видео плеера -->
+	<script src="//kinoplayer.top/top.js"></script>
+
+</body>
+</html>

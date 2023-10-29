@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/styleForInfo.css">
+  <link rel="stylesheet" href="./css/mediaForInfo.css">
+  <title>Описание фильма</title>
+</head>
+<body>
+    
+    <div class="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+  <div class="wrapper">
+    <header class="header">
+        <div class="header__container" id="nav">
+            <button class="header__burger-btn" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="./index.html" class="header__logo">
+                <img src="./img/netflix-logo.svg" alt="Logo">
+            </a>
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
+                        <li class="menu__item"><a href="./films.html" class="menu__link">Фильмы</a></li>
+                        <li class="menu__item"><a href="./favorites.html" class="menu__link">Мой список</a></li>
+                    </ul>
+                </nav>
+                <div class="right__section">
+                    <div class="forms">
+                        <form class="search__container">
+                            <img class="search__icon" src="./img/search.svg" alt="Search">
+                            <input type="text" class="search__input" placeholder="Поиск" />
+                        </form>
+                    </div>
+                    <div class="registration">
+                        <!-- <button class="form__btn">Вход</button> -->
+                        <img src="img/netflix-avatar.png" alt="Avatar" class="nav__avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main">
+            <div class="banner" id="poster__id"></div>
+            <section class="info">
+            <div class="details">
+                <div class="netflixFilm">
+                    <img src="./img/favicon.png" alt="letter N">
+                    <span class="spanText">Ф</span>
+                    <span class="spanText">И</span>
+                    <span class="spanText">Л</span>
+                    <span class="spanText">Ь</span>
+                    <span class="spanText">М</span>
+                </div>
+                <span id="movie__title" class="mooviesName"></span>
+            </div>
+            <div id="movie__container" class="title-info">
+                <span id="original_name" class="mooviesNameRu"></span>
+            <div class="metadataWrraper">
+                <span id="release__date" class="year"></span>
+                <span role="presentation" class="info-spacer">|</span>
+                <span id="rating" class="age"></span>
+                <span role="presentation" class="info-spacer">|</span>
+                <span id="duration" class="runtime"></span>
+                <span role="presentation" class="info-spacer">|</span>
+                <span id="genres" class="ganre"></span>
+            </div>
+            <div class="title-info-synopsis-talent">
+                <div id="overview"></div>
+                <div class="title-info-talent">
+                  <div style="color: #a3a3a3;">Страна : <span id="country"></span></div>
+                  <div class="my__list">
+                    <span>Добавить в мой список </span>
+                    <!-- Значок сердца -->
+                    <div id="favorite__button">
+                        <svg id="favorite__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!--описание между главным постером и трейлером-->
+
+    <section class="nmtitle-section" id="section-hook" data-uia="section-hook">
+        <div class="hook-hr"></div>
+        <h2 class="hook-header" data-uia="hook-header"></h2>
+        <div class="hook-text" data-uia="hook-text">Slogan</div>
+        <div class="hook-hr"></div>
+    </section>
+    <section class="nmtitle-section section-additional-videos" id="section-additional-videos" data-uia="section-additional-videos">
+        <div class="section-header" data-uia="section-header">
+            <h2 class="section-header-text section-item" data-uia="section-header-text" style=" padding-right:16px">трейлер</h2>
+            <h2 class="section-subheader-text section-item titleName" data-uia="section-subheader-text" style="border-left: 1px solid #a3a3a3; padding-left:16px;" id="trailerName"></h2>
+            <div class="nm-content-horizontal-row" aria-hidden="false">
+                <ul class="nm-content-horizontal-row-item-container">
+                    <li class="nm-content-horizontal-row-item" data-uia="collections-row-item">
+                        <div class="additional-video-wrapper" data-uia="additional-video-wrapper">
+                            <button class="additional-video" id="additional-video-trailer">
+                                <span class="additional-video-image-wrapper" id="posterTrailer">
+                                    <svg viewBox="0 0 50 50" class="additional-video-play-icon" data-uia="additional-video-play-icon">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <path fill="#fff" d="M25 50C11.2 50 0 38.8 0 25S11.2 0 25 0s25 11.2 25 25-11.2 25-25 25z" class="base"></path>
+                                            <path fill="#000" d="M35.3 25l-15.6-8.6v17.2z" class="triangle"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="additional-video-title" data-uia="additional-video-title" id="trailerNameBottom"></span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Подробная информация-->
+
+    <section class="nmtitle-section" id="section-more-details" data-uia="section-more-details">
+        <div class="section-header" data-uia="section-header">
+            <h2 class="section-header-text section-item" data-uia="section-header-text">Подробная информация</h2>
+        </div>
+        <div class="more-details-container">
+            <div class="more-details-cell cell-download" data-uia="more-details-cell-download">
+                <div class="more-details-label">Смотрите оффлайн</div>
+                <div class="more-details-item-container">
+                    <span class="more-details-item item-download" data-uia="more-details-item-download">Оффлайн</span>
+                </div>
+            </div>
+            <div class="more-details-cell cell-genres" data-uia="more-details-cell-genres">
+                <div class="more-details-label">Жанры</div>
+                <div class="more-details-item-container">
+                    <span class="more-details-item item-genre" data-uia="more-details-item-genre" id="genresList"></span>
+                </div>
+            </div>
+            <div class="more-details-cell cell-mood-tag" data-uia="more-details-cell-mood-tag">
+                <div class="more-details-label">О фильме:</div>
+                <div class="more-details-item-container">
+                    <span class="more-details-item item-mood-tag" data-uia="more-details-item-mood-tag"><span>Бюджет : </span></span>
+                    <span class="more-details-item item-mood-tag budget" data-uia="more-details-item-mood-tag" id="budget"></span>
+                </div>
+            </div>
+            <div class="more-details-cell cell-audio" data-uia="more-details-cell-audio">
+                <div class="more-details-label">Звук</div>
+                <div class="more-details-item-container">
+                    <span class="more-details-item item-audio" data-uia="more-details-item-audio">English - Audio Description <span>,</span></span>
+                    <span class="more-details-item item-audio" data-uia="more-details-item-audio">English [Original]  <span>,</span></span>
+                    <span class="more-details-item item-audio" data-uia="more-details-item-audio">Русский   </span>
+                </div>
+            </div>
+            <div class="more-details-cell cell-subtitle" data-uia="more-details-cell-subtitle">
+                <div class="more-details-label">Субтитры</div>
+                <div class="more-details-item-container">
+                    <span class="more-details-item item-subtitle" data-uia="more-details-item-subtitle"><span>English </span><span>,</span></span>
+                    <span class="more-details-item item-subtitle" data-uia="more-details-item-subtitle">Русский </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОММЕНТАРИИ -->
+    <!-- <section class="comments">
+        <div id="comments-container"></div>
+    </section> -->
+    <section class="comments">
+        <div class="section-header" id="section-header">
+            <h2 class="section-header-text section-item" data-uia="section-header-text">Комментарии к фильму</h2>
+        </div>
+        <div id="commentsSlider" class="comments-slider">
+            <div class="comments-slider__container">
+                <div id="commentsContainer" class="comments-slider__content"></div>
+            </div>
+            <button id="prevCommentBtn" class="comments-slider__button prev-comment-button">&lt;</button>
+            <button id="nextCommentBtn" class="comments-slider__button next-comment-button">&gt;</button>
+        </div>
+    </section>
+    <!-- КОММЕНТАРИИ -->
+
+    <!-- Похожие фильмы -->
+
+    <section class="nmtitle-section" id="section-more-titles" data-uia="section-more-titles" data-nosnippet="true">
+        <div class="section-header" data-uia="section-header">
+            <h2 class="section-header-text section-item" data-uia="section-header-text">Похожее</h2>
+        </div>
+        <div class="link-container">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__icons">
+                <a href="https://www.facebook.com/netflix/"><img src="./img/icons/facebook.svg" alt="Facebook" class="footer__social"></a>
+                <a href="https://www.instagram.com/Netflix/"><img src="./img/icons/instagram.svg" alt="Instagram" class="footer__social"></a>
+                <a href="#"><img src="./img/icons/youtube.svg" alt="Youtube" class="footer__social"></a>
+            </div>
+            <div class="footer__link">
+                <div class="link__column-one column">
+                    <a href="#" class="link__footer">Аудиоописание</a>
+                    <a href="#" class="link__footer">Связи с инвесторами</a>
+                    <a href="#" class="link__footer">Юридические сообщения</a>
+                </div>
+                <div class="link__column-two column">
+                    <a href="#" class="link__footer">Справочный центр</a>
+                    <a href="#" class="link__footer">Вакансии</a>
+                    <a href="#" class="link__footer">Настройка файлов cookie</a>
+                </div>
+                <div class="link__column-three column">
+                    <a href="#" class="link__footer">Подарочные карты</a>
+                    <a href="#" class="link__footer">Условия использования</a>
+                    <a href="#" class="link__footer">Корпоративная информация медиацентр</a>
+                </div>
+                <div class="link__column-four column">
+                    <a href="#" class="link__footer">Медиацентр</a>
+                    <a href="#" class="link__footer">Конфиденциальность</a>
+                    <a href="#" class="link__footer">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+
+    <!-- Скрипт для работы видео плеера -->
+    <script src="//kinoplayer.top/top.js"></script>
+
+    <!-- Подключение скрипта, который получает информацию о фильме -->
+    <script type="module" src="./js/movie.js"></script>
+    <script type="module" src="public/JS/favorites.js"></script>
+    <script type="module" src="./js/header-film.js"></script>
+    <script type="module" src="./js/search.js"></script>
+    <script type="module" src="./js/trailerInfoMoovie.js"></script>
+    <script type="module" src="./js/burger.js"></script>
+
+    <!-- <script type="module" src="./js/like.js"></script> -->
+    <script type="module" src="./public/JS/like.js"></script>
+    <script type="module" src="./js/movie-play.js"></script>
+    <script type="module" src="./js/comments.js"></script>
+
+</body>
+</html>

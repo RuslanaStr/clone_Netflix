@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* =======================RESET====================== */
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} /* Меняет подсчет ширины блока для более простого подсчета размеров*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  /* font-size: 100%; */
+  /* font-size: 16px; */
+  /*запрещяет самовольное увеличение шрифта на айфонах*/
+  /* -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
+  /*запрещяет самовольное увеличение шрифта на айфонах*/
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;} /*убирает крестик в инпуте на Майкрософт IE*/
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;} /*убирает отступы для кнопок в Mozila*/
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+a {
+  text-decoration: none;
+}
+/*=============================/RESET===================================*/
+
+:root {
+	--background: #141414;
+	--background-gradient: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #141414);
+	--text-color: #e5e5e5;
+	--background-button: #4d5053;
+	--background-registration: #e50914; 
+	--footer-text-color: #808080;
+
+	--banner-background: hsla(250, 6%, 20%, 1);
+
+	--radius-5: 5px;
+}
+
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--background);
+}
+
+/* SCROLL */
+/* :focus-visible { outline-color: var(--background-registration); } */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--banner-background);
+  border-radius: var(--radius-5);
+}
+
+
+.wrapper {
+  /* overflow: hidden; */
+  display: flex; /* нужен код чтобы далее можно было прибить футур к низу */
+  flex-direction: column; /* нужен код чтобы далее можно было прибить футур к низу */
+  min-height: 100%; /*оболочка будет занимать минимум всю ширину окна браузера */
+}
+
+.main {
+  flex: 1 1 auto; /*прижимает футер к низу*/
+}
+
+[class*="__container"]{  /*селектор атрибута*/
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 25px; /*(отступы безопасности чтобы вьюпорт (контент) не прижимался к краям страницы)при добалении отступа в 15рх в min-width добавляем 30рх и значение будет не 1250 - а 1280рх*/
+}
+
+
+/* 
+===================== HEADER ================================
+*/
+.header {
+	position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+	transition: all 0.5s;
+}
+
+.header__container {
+	display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__black {
+	background-color: var(--background);
+}
+
+.header__menu {
+  flex: 1 1 auto;
+} /*расширяет меню если есть логотип и прижимает кнопку бургера к правому краю*/
+
+.menu {
+  display: flex;
+  /* justify-content: center; */
+}
+.menu__list {
+  display: flex;
+}
+
+.menu__link {
+	color: var(--text-color);
+	font-weight: 500;
+	transition: opacity 0.2s;
+}
+.menu__link:hover {
+	opacity: 0.8;
+}
+
+.menu__body {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1 2 auto;
+	align-items: center;
+	margin-left: 100px;
+}
+
+.menu__item {
+	margin-right: 50px;
+}
+
+.right__section {
+	display: flex;
+	align-items: center;
+}
+
+.form__btn {
+	padding: 7px 15px;
+	/* padding: 0.5rem 2rem; */
+	border-radius: var(--radius-5);
+
+	background-color: var(--background-registration);
+	color: var(--text-color);
+	font-size: inherit;
+	transition: opacity 0.2s;
+}
+
+.form__btn:hover {
+	opacity: 0.9;
+}
+/* 
+===================== HEADER ================================
+*/
+/* 
+===================== SEARCH ================================
+*/
+.search__container {
+	position: relative;
+  width: 100px;
+  height: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+.search__icon {
+	position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/search.svg);
+  background-size: cover;
+  cursor: pointer;
+
+	transition: left 0.2s, background-color 0.5s;
+}
+.search__input {
+	position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  height: 30px;
+  padding: 0 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+	font-weight: 500;
+
+
+	transition: width 0.2s, border-color 0.5s, background-color 0.5s, display 0.5s;
+  width: 0;
+  display: none;
+}
+
+.search__icon.active {
+	left: -140px;
+	background-color: var(--background);
+	z-index: 5;
+
+}
+.search__input.active {
+	display: block;
+	width: 200px;
+	border: 1px solid white;
+	background-color: var(--background);
+
+}
+
+.search__input:focus {
+	caret-color: red;
+}
+
+.search__input::placeholder {
+  color: #fff;
+}
+/* 
+===================== SEARCH ================================
+*/
+#saved__movies-container {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-left: 50px;
+}
+
+#movie__template {
+	display: flex;
+}
+
+.favorite__style {
+	padding-top: 100px;
+}
+.fav__title {
+	margin-bottom: 20px;
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--text-color);
+}
+/* .movie {
+	
+}
+.movie__title {
+}
+.movie__poster {
+
+} */
+.movie__poster img {
+	width: 200px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.remove__button {
+	display: block;
+  background-color: var(--background);
+  color: #808080;
+  border: 1px solid var(--text-color);
+  transition: all 0.2s;
+	padding: 5px 15px;
+  font-size: inherit;
+}
+.remove__button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.registration {
+  width: 40px;
+  height: 40px;
+}
+.nav__avatar {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* 
+===================== FOOTER ================================
+*/
+.footer {
+	margin-bottom: 20px;
+}
+
+.footer__icons {
+	margin-left: 385px;
+	margin-bottom: 20px;
+}
+.footer__social {
+	margin-right: 10px;
+	display: inline-block;
+	transition: transform 0.2s linear;
+}
+.footer__social:hover {
+	transform: scale(1.2);
+}
+
+.footer__link {
+	display: flex;
+	justify-content: center;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	margin-right: 75px;
+}
+
+.column__left {
+	display: flex;
+}
+.column__right {
+	display: flex;
+}
+
+.link__footer {
+	color: var(--footer-text-color);
+	margin-bottom: 20px;
+}
+.link__footer:hover {
+	text-decoration: underline;
+}
+/* 
+===================== FOOTER ================================
+*/
+
+.movie__poster {
+	cursor: pointer;
+}

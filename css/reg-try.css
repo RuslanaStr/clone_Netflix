@@ -1,0 +1,200 @@
+#banner-for-reg, #films-for-reg {
+    display: none;
+}
+  
+#banner-for-reg, #films-for-reg {
+    transition: display 0.5s ease;
+}
+  
+#registration #reg {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+  
+#registration h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+  
+#registration .step2Form h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+#registration .step2Form div {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+#registration h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+#registration p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+  
+.inputContainerStep2 {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+  
+.line-break {
+    white-space: pre-line;
+}
+  
+#emailStep2 {
+    width: 48%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    outline: none;
+}
+  
+#buttonStep2 {
+    width: 20%;
+    height: 56px;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+#buttonStep2:hover {
+    background-color: #c7000b;
+}
+  
+.inputContainerStep2::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in;
+}
+  
+#emailStep2:focus + .inputContainerStep2::before {
+    opacity: 1;
+    top: 0;
+    transform: translate(-50%, -100%);
+}
+  
+#emailStep2:focus {
+    font-size: 12px;
+    padding-top: 5px;
+    transition: font-size 0.3s ease-in, padding-top 0.3s ease-in;
+    border-color: #007bff;
+}
+  
+#reg {
+    display: block;
+}
+  
+#reg1 {
+    display: none;
+    width: 67%;
+    height: 50vh;
+    background-color:white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 5;
+    margin-top: 30px;
+}
+  
+#emailStep3 {
+    width: 440px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    position: relative;
+    outline: none;
+}
+  
+#passwordStep3 {
+    width: 440px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    position: relative;
+    outline: none;
+}
+  
+#emailStep3:focus, #passwordStep3:focus {
+    border-color: #007bff;
+}
+  
+#buttonStep3 {
+    width: 440px;
+    height: 40px;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+#buttonStep3:hover {
+    background-color: #c7000b;
+}
+  
+.step2Form {
+    width: 440px;
+}
+  
+#registration {
+    width: 80%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+/* .nav__avatar {
+    width: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 5px;
+} */
+  
+#registration .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+  
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

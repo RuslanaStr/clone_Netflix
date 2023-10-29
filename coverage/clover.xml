@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1689430862698" clover="3.2.0">
+  <project timestamp="1689430862699" name="All files">
+    <metrics statements="168" coveredstatements="130" conditionals="66" coveredconditionals="47" methods="26" coveredmethods="19" elements="260" coveredelements="196" complexity="0" loc="168" ncloc="168" packages="1" files="6" classes="6"/>
+    <file name="api.js" path="C:\Users\Роман\Desktop\hw\netflix_clone-master\jest\api.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+    </file>
+    <file name="banner.js" path="C:\Users\Роман\Desktop\hw\netflix_clone-master\jest\banner.js">
+      <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="5" methods="2" coveredmethods="2"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="27" count="2" type="stmt"/>
+      <line num="30" count="2" type="stmt"/>
+      <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="39" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+    </file>
+    <file name="favorites.js" path="C:\Users\Роман\Desktop\hw\netflix_clone-master\jest\favorites.js">
+      <metrics statements="26" coveredstatements="24" conditionals="10" coveredconditionals="8" methods="6" coveredmethods="4"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="16" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="20" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="27" count="4" type="stmt"/>
+      <line num="28" count="4" type="stmt"/>
+      <line num="29" count="4" type="stmt"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="31" count="4" type="stmt"/>
+      <line num="34" count="4" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="39" count="4" type="stmt"/>
+      <line num="40" count="4" type="stmt"/>
+      <line num="41" count="4" type="stmt"/>
+      <line num="42" count="4" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="47" count="4" type="stmt"/>
+      <line num="48" count="4" type="stmt"/>
+      <line num="49" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="50" count="2" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+    </file>
+    <file name="genre-list-try.js" path="C:\Users\Роман\Desktop\hw\netflix_clone-master\jest\genre-list-try.js">
+      <metrics statements="83" coveredstatements="54" conditionals="22" coveredconditionals="22" methods="12" coveredmethods="8"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="31" count="4" type="stmt"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="35" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="43" count="2" type="stmt"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="46" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="47" count="2" type="stmt"/>
+      <line num="48" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="49" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="50" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="53" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="54" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="60" count="2" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="62" count="2" type="stmt"/>
+      <line num="64" count="2" type="stmt"/>
+      <line num="65" count="2" type="stmt"/>
+      <line num="66" count="2" type="stmt"/>
+      <line num="67" count="2" type="stmt"/>
+      <line num="68" count="2" type="stmt"/>
+      <line num="69" count="2" type="stmt"/>
+      <line num="71" count="2" type="stmt"/>
+      <line num="72" count="0" type="stmt"/>
+      <line num="73" count="0" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="80" count="0" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+      <line num="83" count="0" type="stmt"/>
+      <line num="85" count="0" type="stmt"/>
+      <line num="86" count="0" type="stmt"/>
+      <line num="87" count="0" type="stmt"/>
+      <line num="89" count="0" type="stmt"/>
+      <line num="91" count="0" type="stmt"/>
+      <line num="92" count="0" type="stmt"/>
+      <line num="93" count="0" type="stmt"/>
+      <line num="94" count="0" type="stmt"/>
+      <line num="97" count="0" type="stmt"/>
+      <line num="100" count="0" type="stmt"/>
+      <line num="101" count="0" type="stmt"/>
+      <line num="103" count="0" type="stmt"/>
+      <line num="104" count="0" type="stmt"/>
+      <line num="105" count="0" type="stmt"/>
+      <line num="141" count="1" type="stmt"/>
+      <line num="142" count="1" type="stmt"/>
+      <line num="144" count="1" type="stmt"/>
+      <line num="145" count="1" type="stmt"/>
+      <line num="146" count="1" type="stmt"/>
+      <line num="148" count="1" type="stmt"/>
+      <line num="149" count="1" type="stmt"/>
+      <line num="150" count="1" type="stmt"/>
+      <line num="152" count="1" type="stmt"/>
+      <line num="153" count="1" type="stmt"/>
+      <line num="155" count="1" type="stmt"/>
+      <line num="156" count="0" type="stmt"/>
+      <line num="159" count="1" type="stmt"/>
+      <line num="162" count="1" type="stmt"/>
+      <line num="163" count="0" type="stmt"/>
+      <line num="164" count="0" type="stmt"/>
+      <line num="165" count="0" type="stmt"/>
+      <line num="166" count="0" type="stmt"/>
+      <line num="169" count="0" type="stmt"/>
+      <line num="172" count="1" type="stmt"/>
+      <line num="173" count="1" type="stmt"/>
+      <line num="174" count="0" type="stmt"/>
+    </file>
+    <file name="header-film.js" path="C:\Users\Роман\Desktop\hw\netflix_clone-master\jest\header-film.js">
+      <metrics statements="7" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+    </file>
+    <file name="like.js" path="C:\Users\Роман\Desktop\hw\netflix_clone-master\jest\like.js">
+      <metrics statements="24" coveredstatements="18" conditionals="22" coveredconditionals="9" methods="4" coveredmethods="3"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="39" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="52" count="1" type="cond" truecount="2" falsecount="0"/>
+    </file>
+  </project>
+</coverage>

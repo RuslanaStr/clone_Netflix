@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
+	<link rel="stylesheet" href="./css/slider.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<title>Netflix</title>
+</head>
+<body>
+
+	<!-- 
+		HEADER NAVIGATION
+	-->
+	<section class="wrapper">
+
+		<header class="header">
+			<div class="header__container" id="nav">
+				<button class="header__burger-btn" id="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="./index.html" class="header__logo">
+					<img src="./img/netflix-logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="./films.html" class="menu__link">Фильмы</a></li>
+							<li class="menu__item"><a href="./favorites.html" class="menu__link">Мой список</a></li>
+						</ul>
+					</nav>
+					<div class="right__section">
+						<div class="forms">
+							<form class="search__container">
+								<img class="search__icon" src="img/search.svg" alt="Search">
+								<input type="text" class="search__input" placeholder="Поиск" />
+							</form>
+						</div>
+						<div class="registration__form">
+							<!-- <img class="nav__avatar" src=""> -->
+							<!-- <button class="form__btn">Вход</button> -->
+							<img src="img/netflix-avatar.png" alt="Avatar" class="nav__avatar">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section__header-genres">
+				<div class="select__title">Фильмы</div>
+				<select name="select" id="films__genre">
+					<option value="all" selected>Жанры</option>
+					<option value="popular">Популярные фильмы</option>
+					<option value="28">Боевик</option>
+					<option value="12">Приключения</option>
+					<option value="35">Комедия</option>
+					<option value="18">Драма</option>
+					<option value="14">Фэнтези</option>
+				</select>
+			</div>
+		</header>
+
+		<!-- 
+			MAIN SECTION
+		-->
+		<main class="main">
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__contents">
+						<div class="netflixFilm">
+							<img src="./img/favicon.png" alt="letter N">
+							<span class="spanText">Ф</span>
+							<span class="spanText">И</span>
+							<span class="spanText">Л</span>
+							<span class="spanText">Ь</span>
+							<span class="spanText">М</span>
+					</div>
+						<div class="title__banner">
+							<h1 class="banner__title"></h1>
+						</div>
+						<div class="banner__buttons">
+							<button class="banner__button-play button__banner">
+								<img src="./img/play.png" alt="Info" class="button__banner-img">Посмотреть</button>
+							<button class="banner__button-desc button__banner">
+								<img src="./img/info.svg" alt="Info" class="button__banner-img">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<!-- Градиент перехода между секциями -->
+				<div class="banner__fade-bottom"></div>
+			</section>
+
+
+			<!-- GENRE FILMS -->
+			<section class="films">
+				<div class="films__container">
+					<div class="genre__film"></div>
+					<div class="movie__details"></div>
+				</div>
+				<div class="genre__container">
+					
+					<div class="genres__movies"></div>
+				</div>
+				<div class="modal"></div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__icons">
+					<a href="https://www.facebook.com/netflix/"><img src="./img/icons/facebook.svg" alt="Facebook" class="footer__social"></a>
+					<a href="https://www.instagram.com/Netflix/"><img src="./img/icons/instagram.svg" alt="Instagram" class="footer__social"></a>
+					<a href="#"><img src="./img/icons/youtube.svg" alt="Youtube" class="footer__social"></a>
+				</div>
+				<div class="footer__link">
+					<div class="column__left">
+						<div class="link__column-one column">
+							<a href="#" class="link__footer">Аудиоописание</a>
+							<a href="#" class="link__footer">Связи с инвесторами</a>
+							<a href="#" class="link__footer">Юридические сообщения</a>
+						</div>
+						<div class="link__column-two column">
+							<a href="#" class="link__footer">Справочный центр</a>
+							<a href="#" class="link__footer">Вакансии</a>
+							<a href="#" class="link__footer">Настройка файлов cookie</a>
+						</div>
+					</div>
+					<div class="column__right">
+						<div class="link__column-three column">
+							<a href="#" class="link__footer">Подарочные карты</a>
+							<a href="#" class="link__footer">Условия использования</a>
+							<a href="#" class="link__footer">Корпоративная информация</a>
+						</div>
+						<div class="link__column-four column">
+							<a href="#" class="link__footer">Медиацентр</a>
+							<a href="#" class="link__footer">Конфиденциальность</a>
+							<a href="#" class="link__footer">Связаться с нами</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script type="module" src="./public/JS/api.js"></script>
+	<script type="module" src="./js/header-film.js"></script>
+	<script type="module" src="./js/search.js"></script>
+	<script type="module" src="./js/banner.js"></script>
+	<script type="module" src="./js/genre-list-try.js"></script>
+	<script type="module" src="./js/modal.js"></script>
+	<script type="module" src="./js/burger.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createMovieElement should create movie element 1`] = `
+<div
+  class="slider__film"
+>
+  <a
+    class="slider__poster-genre"
+    target="_blank"
+  >
+    <img
+      class="slider__poster"
+      src="https://image.tmdb.org/t/p/w500/poster1.jpg"
+    />
+  </a>
+</div>
+`;

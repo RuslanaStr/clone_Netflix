@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2016",
+    "outDir": "./public/JS",
+    // "outFile": "./public/JS/favorites.js",
+    "moduleResolution": "node",
+    "types": [
+      "jquery"
+    ]
+  },
+  "include": [
+    "./public/TS/*.ts",
+    "./jquery.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
